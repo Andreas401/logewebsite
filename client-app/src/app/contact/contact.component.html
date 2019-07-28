@@ -1,0 +1,43 @@
+<div style="width: 900px; margin-left: auto; margin-right: auto; margin-top: 50px;">
+
+    <div style="width: 400px; display: inline-block; margin-bottom: 75px;">
+        <div><h3>KONTAKT DETALJER</h3>
+
+
+
+            På denne side kan du finde de fornødne oplysninger på vores kontaktperson eller sende os en mail fra denne
+            side.</div>
+        <div style="margin-top: 20px; width: 425px;">
+            <div style="display: inline-block; margin-right: 35px">
+                <div>Kontaktperson<br><br>
+
+                Svend jeske</div><br>
+
+                <i class="material-icons"
+                    style="display: inline-block; margin: 0px; padding: 0px; width: 30px; vertical-align: middle">email_outlined</i>Mail: druidepost@dfdo.dk<br><br>
+
+                    <i class="material-icons"
+                    style="display: inline-block; margin: 0px; padding: 0px; width: 30px; vertical-align: middle">phone</i>Telefon 47 31 71 97<br><br>
+
+                    <i class="material-icons"
+                    style="display: inline-block; margin: 0px; padding: 0px; width: 30px; vertical-align: middle">phone</i>Mobil: 51 92 08 82</div>
+            <div style="display: inline-block; margin-top: 20px;"><img width="156" height="188" src="../../assets/images/Kontakt-druide.png"></div>
+        </div>
+    </div>
+    <div style="width: 425px; display: inline-block; margin-left: 50px;">
+        <form [formGroup]="emailForm" (ngSubmit)="onSubmit(emailForm.value)">
+            <label style="font-size: 20px; display: block;">Navn: </label>
+            <input size="45" type="text" formControlName="name">
+
+            <label style="font-size: 20px; display: block;">Email: </label>
+            <input size="45" type="text" formControlName="email">
+
+            <label style="font-size: 20px; display: block;">Besked: </label>
+            <textarea rows="8" cols="46" formControlName="message"></textarea>  
+
+            <button style="display: block;" type="submit">Send</button>
+        </form>
+
+    </div>
+
+</div>
